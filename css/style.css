@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Celano';
+  src: url('/font/pdark.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: 'Celano';
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+}
+
+#start-game {
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  top: calc(50% - 3rem);
+  left: calc(50% - 15rem);
+  height: 6rem;
+  width: 30rem;
+
+  font-size: 2rem;
+  font-family: inherit;
+  color: var(--clr-neon);
+  background-color: black;
+
+  border: currentColor 0.125em solid;
+  border-radius: 0.25em;
+
+  text-shadow: 0 0 1em currentColor;
+  box-shadow: 
+    inset 0 0 0.5em 0 currentColor,
+    0 0 0.5em 0 currentColor;
+}
+
+#start-game:hover {
+  color: var(--clr-neon-hover);
+  text-shadow: 0;
+}
+
+#start-game > p {
+  margin: auto;
+}
+
+video {
+  display: none;
+}
+
+:root {
+  --clr-neon: #00aaff;
+  --clr-neon-hover: #00fffb;
+}
